@@ -9,4 +9,5 @@ bin/kafka-server-start.sh config/server.properties
 
 # To run producer and consumer
 node ./producer.js
+
 node ./consumer.js
