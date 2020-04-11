@@ -50,7 +50,7 @@ producer.on('ready', function() {
   });
 });
 
-app.post('/sendMsg',function(req,res){
+app.post('/send-message',function(req,res){
   var sentMessage = JSON.stringify(req.body.message);
   const payloads = [
       { topic: req.body.topic, messages:sentMessage , partition: 0 }
